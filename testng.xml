@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="suite1" verbose="1">
+    <test name="posts">
+        <parameter name="userId" value="1"/>
+        <parameter name="id" value="1"/>
+        <parameter name="title" value="sunt aut facere repellat provident occaecati excepturi optio reprehenderit"/>
+        <parameter name="myUserId" value="345"/>
+        <parameter name="anotherMyUserId" value="346"/>
+        <classes>
+            <class name="org.sourceit.post.PostTest">
+                <methods><include name="test*"/></methods>
+            </class>
+        </classes>
+    </test>
+</suite>
